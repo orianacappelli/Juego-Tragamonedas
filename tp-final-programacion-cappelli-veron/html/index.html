@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://fonts.cdnfonts.com/css/bubblegum" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/imagenes/zorro-ganaste.png">
+    <title>Spin Animals</title>
+</head>
+<body>
+    <!--PANTALLA 1 inicio-->
+
+    <section id="pantalla1">
+        <div class="welcome">
+            <h1>Welcome to SpinAnimals!</h1>
+        </div>
+
+        <div class="ingresar-nombre">
+            <p>
+                <input id="nombre" type="text" placeholder="Write your name" required>
+            </p>
+        </div>
+
+        <div class="boton-inicio">
+            <p>
+                <button id="nombre" type="button" onclick="mostrar_todo()">Start!</button>
+            </p>
+        </div>
+
+    </section>
+
+    <!--PANTALLA 2 juego-->
+    <section id="pantalla2">
+
+    <!-- muestra las imagenes -->
+        <div class="fondo-tragamonedas">
+            <section class="imagenes">
+
+                <div><img id="img1" src="/imagenes/oso.png" ></div>
+                <div><img id="img2" src="/imagenes/oso.png" ></div>
+                <div><img id="img3" src="/imagenes/oso.png" ></div>
+
+            </section>
+
+    <!-- muestra el jugador con su nombre -->
+            <section class="jugador">
+                    <h4 id="nombre_jugador"></h4>
+            </section>
+
+    <!-- muestra el boton de tirar y la cantidad de creditos-->
+            <section class="boton-dinero">
+                    <!-- dinero -->
+                <div id="dinero">CREDITS: 5</div>
+                    <!-- boton de tirar -->
+                <button id="juego">SPIN</button>
+            </section>
+        </div>
+    </section>
+
+    <!--PANTALLA 3 ganaste-->
+    <section id="pantalla3">
+            <h1>BIG WIN!</h1>
+            <img src="/imagenes/zorro-ganaste.png" alt="zorro feliz">
+                <p>
+                    <button id="nombre" type="button" onclick="recargar()">Retry!</button>
+                </p>
+    </section>
+
+    <!--PANTALLA 4 perdiste-->
+<section id="pantalla4">
+            <h1>GAME OVER!</h1>
+            <img src="/imagenes/zorro-triste.png" alt="zorro triste">
+            <p>
+                <button id="nombre" type="button" onclick="recargar()">Retry!</button>
+            </p>
+</section>
+
+<script src="/js/main.js"></script>
+
+</body>
+</html>
